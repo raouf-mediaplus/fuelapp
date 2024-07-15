@@ -1,0 +1,134 @@
+/* nouvelles classes css */
+
+/* ancienne mise en forme provisoire */
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.form-group {
+  flex: 1;
+  margin-right: 20px;
+}
+
+#infos-piece {
+  flex: 2;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+ul#infos-piece li {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+select,
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+
+span {
+  color: #aaa;
+}
+
+.button-group {
+  text-align: right;
+  margin-top: 20px;
+}
+
+button.ok,
+button.cancel {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.cancel {
+  background-color: #f44336;
+}
+
+button.ok:hover,
+button.cancel:hover {
+  opacity: 0.8;
+}
+.hidden {
+  display: none;
+}
+
+.gray-background {
+  background-color: #385251;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#historique-table,
+#plan-table {
+  border-collapse: separate;
+  border-spacing: 10px 5px !important;
+}
+
+#historique-table,
+#plan-table td {
+  border: 1px solid #ddd;
+  border-color: transparent;
+}
+#historique-table,
+#plan-table th {
+  border: 0px solid #ddd;
+  border-color: black;
+}
+
+.form-container {
+  display: flex !important;
+}
+.form-group {
+  flex: 1;
+  padding: 20px !important;
+}
+.vertical-separator {
+  width: 1px;
+  background-color: #ccc;
+  color: #ccc;
+  margin: 0 1px;
+}
+#image-piece {
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+.negative {
+  color: orange;
+}

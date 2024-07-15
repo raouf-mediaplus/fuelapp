@@ -1,0 +1,27 @@
+body {
+  background-color: #ffffff;
+}
+.card-header {
+  background-color: #071e3b;
+  color: white;
+}
+.form-select {
+  padding: 10px;
+}
+/* .greyCard {
+  background-color: rgb(37, 48, 48);
+} */
+.histMontDate {
+  background-color: #627d9f;
+  border: none;
+}
+.kmActuel {
+  color: #ffff6e;
+}
+input.kmActuel {
+  border-color: #ffff6e;
+}
+.btn-warning,
+.btn-danger {
+  margin: 0.5rem;
+}
