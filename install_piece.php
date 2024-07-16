@@ -33,15 +33,15 @@ $result_unites = $conn->query($sql_unites);
 
     </div>
     <div class="card">
-        <h3 class="card-header text-center">Montage d'une Pièce de Rechange</h3>
+        <h5 class="card-header">Montage d'une Pièce de Rechange</h5>
 
         <div class="row g-0">
-            <div class="col-md-4" style="text-align: center;">
-                <img src="..." id="image-piece" class="img-fluid rounded-start text-center" alt="image de la pièce">
+            <div class="col-md-4 d-flex align-items-center justify-content-center" style="text-align: center; padding: 0;">
+                <img src="..." id="image-piece" class=" big-thumbnail img-fluid rounded text-center" alt="image de la pièce">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
-                    <h4 class="card-title">Détails Pièce</h4>
+                    <h5 class="card-title">Détails Pièce</h5>
                     <hr>
                     <div class="row mb-3">
                         <label for="ref-piece" class="col-sm-2 col-form-label">Référence</label>
@@ -60,33 +60,35 @@ $result_unites = $conn->query($sql_unites);
                             </select>
                         </div>
                     </div>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">Code</th>
-                                <th scope="col">Valeur</th>
+                    <div class="table-responsive">
+                        <table class="table no-border">
+                            <!-- <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Valeur</th>
 
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Code Pièce</td>
-                                <td id="code-info"></td>
-                            </tr>
-                            <tr>
-                                <td>Catégorie</td>
-                                <td id="categorie-info"></td>
-                            </tr>
-                            <tr>
-                                <td>Mat. Unité Act.</td>
-                                <td id="immatriculation-info"></td>
-                            </tr>
-                            <tr>
-                                <td>Km. Unité Act.</td>
-                                <td id="kilometrage-info"></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <td>Code Pièce</td>
+                                    <td id="code-info"></td>
+                                </tr>
+                                <tr>
+                                    <td>Catégorie</td>
+                                    <td id="categorie-info"></td>
+                                </tr>
+                                <tr>
+                                    <td>Mat. Unité Act.</td>
+                                    <td id="immatriculation-info"></td>
+                                </tr>
+                                <tr>
+                                    <td>Km. Unité Act.</td>
+                                    <td id="kilometrage-info"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
             </div>
@@ -94,80 +96,84 @@ $result_unites = $conn->query($sql_unites);
     </div>
 
     <!-- end of first card-body -->
-    <h3 class="card-header text-center">Planif. Kilométrage et Durée</h3>
-    <div class="row">
+    <!-- <h4 class="card-header">Planif. Kilométrage et Durée</h4> -->
+    <div class="row pt-4">
 
-        <div class="col-lg-6" style="padding: 0;">
+        <div class="col-lg-6">
             <div class="card">
-                <div class="card-body" style="background-color:#627D9F; color:white">
+                <div class="card-body light">
 
-                    <h4 class=" card-title">Historique montages</h4>
+                    <h5 class=" card-title">Historique montages</h5>
                     <hr>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">Mat.Unité</th>
-                                <th scope="col">Date montage</th>
-                                <th scope="col">Km au montage</th>
-                                <th scope="col">Date fin</th>
-                                <th scope="col">Km fin d'utilisation</th>
+                    <div class="table-responsive">
+                        <table class="table light">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Mat.Unité</th>
+                                    <th scope="col">Date montage</th>
+                                    <th scope="col">Km au montage</th>
+                                    <th scope="col">Date fin</th>
+                                    <th scope="col">Km fin</th>
 
-                            </tr>
-                        </thead>
-                        <tbody><!-- Ajouter id="plan-interv" le moment venu-->
+                                </tr>
+                            </thead>
+                            <tbody><!-- Ajouter id="plan-interv" le moment venu-->
 
-                            <tr>
-                                <td>1</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>3</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>3</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>3</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>3</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>5</td>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>3</td>
-                                <td><input class="histMontDate" type="date" /></td>
-                                <td>5</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>3</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>3</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>3</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>3</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>3</td>
+                                    <td><input class="histMontDate" type="date" /></td>
+                                    <td>5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <form>
+                        <hr>
                         <div class="row mb-3">
-                            <label for="kilometrage-piece" class="col-sm-2 col-form-label">TOTAL KM</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="kilometrage-piece">
+
+                            <label for="kilometrage-piece" class="col-sm-3 col-form-label"><i class="bi bi-speedometer2"></i>TOTAL KM</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control green-border-input" id="kilometrage-piece">
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="col-lg-6" style="padding: 0; background-color:#23C199; color:white">
+        <div class="col-lg-6">
             <div class="card">
-                <div class="card-body" style="background-color:#23C199; color:white">
-                    <h4 class=" card-title">Nouveau montage</h4>
+                <div class="card-body light" style="background-color:#1C252E;">
+                    <h5 class=" card-title">Nouveau montage</h5>
                     <hr>
                     <form>
                         <div class="row mb-3">
@@ -189,7 +195,7 @@ $result_unites = $conn->query($sql_unites);
                         <div class="row mb-3">
                             <label for="kilometrage-label" class="col-sm-3 col-form-label kmActuel">KM Actuel</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control kmActuel" id="kilometrage-label">
+                                <input type="text" placeholder="kilomertage actuel" class="form-control kmActuel" id="kilometrage-label">
                             </div>
                         </div>
                         <div class="row mb-3">
@@ -202,18 +208,20 @@ $result_unites = $conn->query($sql_unites);
                         <div class="row mb-3">
                             <label for="responsable" class="col-sm-3 col-form-label">Responsable</label>
                             <div class="col-sm-9">
-                                <input type="text" class="form-control" id="responsable" name="responsable">
+                                <input type="text" placeholder="nom du responsable" class="form-control" id="responsable" name="responsable">
                             </div>
                         </div>
 
                     </form>
+                    <hr>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin: 1rem;">
+                        <button class="btn btn-valider me-md-2" type="button">Valider <i class="bi bi-check-circle-fill" style="background-color: #73E587 !important ;"></i></button>
+                        <button class="btn btn-annuler" type="button">Annuler <i class="bi bi-x-circle" style="background-color: red !important;"></i></button>
+                    </div>
                 </div>
 
             </div>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end" style="margin: 1rem;">
-                <button class="btn btn-warning me-md-2" type="button">Valider</button>
-                <button class="btn btn-danger" type="button">Annuler</button>
-            </div>
+
         </div>
     </div>
 

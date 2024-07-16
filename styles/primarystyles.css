@@ -1,18 +1,82 @@
-body {
-  background-color: #ffffff;
+body,.row, h4, label, select, input, table, th, td, .btn {
+  color: white !important;
 }
+
+body,.row, h4, label, select, input, table, th, td, col-md-4 {
+  background-color: #141A21
+}
+body {
+  font-family: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+.light,.light *{
+  background-color:#1C252E !important;
+  border: none;
+}
+.light td, .light th{
+  border: none !important;
+}
+.light th{
+  background-color: #1f2933 !important;
+}
+.green-border-input{
+  border: 0.5px solid #73E587;
+}
+ 
 .card-header {
-  background-color: #071e3b;
+  background-color:#141A21;
   color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.card{
+  border-radius: 20px;
+  border: none;
+}
+.card-body{
+  background-color: #141A21;
+  border-radius: 15px;
+}
+.big-thumbnail{
+  height: 90%;
+}
+.bi-speedometer2{
+  color: #73E587;
+  padding: 0.7rem;
+  font-size: large;
+}
+hr{
+  border-top: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+.table{
+  color: white;
+  background-color: #141A21;
+}
+.no-border td, .no-border th{
+  border: none;
 }
 .form-select {
   padding: 10px;
+  background-color: #141A21;
+  border-radius: 10px;
+}
+.btn-valider{
+  background-color: #73E587 !important ;
+}
+.btn-valider:hover{
+  opacity: 0.7;
+}
+.btn-annuler{
+  background-color: red !important;
+  margin-left: 1rem;
+}
+.btn-annuler:hover{
+  opacity: 0.7;
 }
 /* .greyCard {
   background-color: rgb(37, 48, 48);
 } */
 .histMontDate {
-  background-color: #627d9f;
+  /* background-color: #627d9f; */
   border: none;
 }
 .kmActuel {
