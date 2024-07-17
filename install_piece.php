@@ -29,9 +29,38 @@ $result_unites = $conn->query($sql_unites);
 ?>
 
 <?php require('./components/head.inc.php'); ?>
-<form id="form-install-piece" class="fluid-container">
+
+<!--Ajout d'un navBar à confirmer -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <a class="navbar-brand" href="#"><i class="bi bi-fuel-pump-fill"></i> FuelApp</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <button class="btn btn-outline-light btn-login ms-lg-3" type="button">log out <i class="bi bi-box-arrow-right"></i></button>
+        </ul>
 
     </div>
+
+</nav>
+<!-- end of navBar -->
+
+<form id="form-install-piece" class="fluid-container">
     <div class="card">
         <h5 class="card-header">Montage d'une Pièce de Rechange</h5>
 
